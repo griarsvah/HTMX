@@ -18,10 +18,12 @@ https://unpkg.com/
 
 
 ## Версия
+При подключении без версии, автоматически будет подключаться стабильная версия, сейчас это 1.9.12
+Проверить можно во вкладке Network или Sources
 Можно подключить другую версию
+
 ```HTML
 <script src="https://unpkg.com/htmx.org@2.0.4"></script>
-https://unpkg.com/browse/htmx.org@2.0.4/
 ```
 
 
@@ -48,7 +50,6 @@ HTML + HTMX + Python (Flask/Django)
     Нажми на меня
 </button>
 
-
 <!-- hx-target -->
 <button hx-get="hx-target.php" hx-target="#результат">
     Нажми на меня
@@ -66,9 +67,11 @@ HTML + HTMX + Python (Flask/Django)
 
 ## Ошибки в консоли
 Следующие ошибки связанные с тем что нет файла hx-get="hx-get.php"
+
 ```
 hx-get.php:1 Failed to load resource: the server responded with a status of 404 ()
 ```
+
 При клике переходим во вкладку Sources и видим "No resource with given identifier found"
 ```
 htmx.org:1 Response Status Error Code 404 from hx-get.php
@@ -82,5 +85,6 @@ he @ htmx.org:1
 (anonymous) @ htmx.org:1
 i @ htmx.org:1
 ```
+
 А если тут кликнуть а после открыть в новом окне то переходим
 в https://unpkg.com/htmx.org@1.9.12/dist/htmx.min.js
